@@ -1,0 +1,50 @@
+.container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_grid {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 80% 20%;
+    gap: 5px;
+    grid-template-areas:
+            "info portrait"
+            "authors authors";
+}
+
+.info {
+    grid-area: info;
+}
+
+.portrait {
+    grid-area: portrait;
+}
+
+.authors {
+    grid-area: authors;
+}
+
+.authors-list {
+    border: red dotted 1px;
+}
+
+nav>ul {
+    list-style: none;
+}
+nav>ul>li {
+    display: inline;
+    margin-right: 7px;
+}
+
+dt, dd {
+    display: inline;
+}
+dt::after {
+    content: ':';
+}
